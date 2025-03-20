@@ -43,32 +43,7 @@ def caesar_cipher(text, key, encrypt=True):
     return result
 ```
 
-# Get user input
-plain_text = input("\nEnter the plain text: ")
-key = int(input("Enter the key value: "))
-
-# Encryption
-encrypted_text = caesar_cipher(plain_text, key)
-print("\nEncrypted Text:", encrypted_text)
-
-# Decryption
-decrypted_text = caesar_cipher(encrypted_text, key, encrypt=False)
-print("\nDecrypted Text:", decrypted_text)
 
 
-# Get user input
-plain_text = input("\nEnter the plain text: ")
-key = int(input("Enter the key value: "))
-
-# Encryption
-encrypted_text = caesar_cipher(plain_text, key)
-print("\nEncrypted Text:", encrypted_text)
-
-# Decryption
-decrypted_text = caesar_cipher(encrypted_text, key, encrypt=False)
-print("\nDecrypted Text:", decrypted_text)
-
-
-
-OUTPUT :-![image](https://github.com/user-attachments/assets/345e4808-6a87-4016-ab0a-8442e250a07e)
+###OUTPUT :-![image](https://github.com/user-attachments/assets/345e4808-6a87-4016-ab0a-8442e250a07e)
 
