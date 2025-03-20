@@ -27,7 +27,9 @@ becomes C. To change a message back, each letter is replaced by the one three be
 ### STEP-5: Display the cipher text obtained above.
 
 
-PROGRAM :-def caesar_cipher(text, key, encrypt=True):
+PROGRAM :-
+```
+def caesar_cipher(text, key, encrypt=True):
     result = ""
     
     for char in text:
@@ -39,6 +41,19 @@ PROGRAM :-def caesar_cipher(text, key, encrypt=True):
             result += char
     
     return result
+```
+
+# Get user input
+plain_text = input("\nEnter the plain text: ")
+key = int(input("Enter the key value: "))
+
+# Encryption
+encrypted_text = caesar_cipher(plain_text, key)
+print("\nEncrypted Text:", encrypted_text)
+
+# Decryption
+decrypted_text = caesar_cipher(encrypted_text, key, encrypt=False)
+print("\nDecrypted Text:", decrypted_text)
 
 
 # Get user input
